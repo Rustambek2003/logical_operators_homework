@@ -23,4 +23,4 @@ def main(a):
         answer = True
     else:
         answer = False
-    return
+    return answer
