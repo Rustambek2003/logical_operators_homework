@@ -8,5 +8,11 @@ def main(n):
     Returns:
         bool: answer
     """
+    answer = 0
+    m = n % 10
+    if m > 0:
+        answer = True
+    else:
+        answer = False
 
-    return
+    return answer
