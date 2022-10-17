@@ -6,4 +6,22 @@ def main(a):
     Returns:
         bool: answer
     """
-    return
+    answer = 0
+    n = a % 10
+    a //= 10
+
+    m = a % 10
+    a //= 10
+
+    p = a % 10
+    a //= 10
+
+    k = a % 10
+    a //= 10
+
+    l = a % 10
+    if l > k and k > p and p > m and m > n:
+        answer = True
+    else:
+        answer = False
+    return answer 
