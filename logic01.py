@@ -8,13 +8,11 @@ def main(a,b,c):
     Returns:
         bool: answer
     """
-    s = 0
+    answer = 0
     if a > b and b > c:
-        s = "The number b is between a and c"
+        answer = "The number b is between a and c"
     elif c > b and b > a:
-        s = "The number b is between a and c"
-    else:
-        s = "The number b is not between a and c"
+        answer = "The number b is between a and c"
 
-    return s
+    return answer
 print(main(9,3,5))
