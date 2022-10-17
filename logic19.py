@@ -11,13 +11,11 @@ def main(x):
     answer = 0
     a = x % 10
     b = (x // 10) % 10
-    X = a * 10 + b
-    print(x)
-    print(X)
+    c = x // 100
+    X = a * 100 + b * 10 + c
     if X == x:
         answer = True
     else:
         answer = False
-
     return answer
-print(main(55))
+print(main(525))
