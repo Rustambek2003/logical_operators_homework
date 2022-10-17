@@ -7,4 +7,10 @@ def main(a,b):
     Returns:
         bool: answer
     """
-    return
+    s = 0
+    if a > 0 and b > 0:
+        s = "Each of the numbers 'a' and 'b' is positive"
+    else:
+        s = "Each of the numbers 'a' and 'b' is not positive"
+    return s
+print(main(4,5))
