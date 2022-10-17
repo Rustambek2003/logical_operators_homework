@@ -8,4 +8,14 @@ def main(x):
     Returns:
         bool: answer
     """
-    return
+    answer = 0
+    a = x % 10
+    x //= 10
+
+    b = x % 10
+    if a == b:
+        answer = True
+    else:
+        answer = False
+
+    return answer
