@@ -7,4 +7,9 @@ def main(a,b):
     Returns:
         bool: answer
     """
-    return
+    if a < 0 and b < 0:
+        answer = "Each of the numbers 'a' and 'b' is negative"
+    else:
+        answer = "Each of the numbers 'a' and 'b' is not negative"
+    return answer
+print(main(-4,-6))
