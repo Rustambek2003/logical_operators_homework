@@ -13,7 +13,8 @@ def main(x):
     x //= 10
 
     b = x % 10
-    if a == b:
+    X = a * 10 + b
+    if X == x:
         answer = True
     else:
         answer = False
