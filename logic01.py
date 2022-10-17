@@ -11,6 +11,10 @@ def main(a,b,c):
     answer = 0
     if a > b and b > c:
         answer = "The number b is between a and c"
-
+    elif c > b and b > a:
+        answer = "The number b is between a and c"
+    else:
+        answer = "The number b is not between a and c"
+    
     return answer
-print(main(5,9,14))
+print(main(14,13,12))
