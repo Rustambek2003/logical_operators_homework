@@ -6,9 +6,10 @@ def main(a):
     Returns:
         bool: answer
     """
-     answer = 0
+    answer = 0
     if a > 99 and a < 1000:
         answer = True
     else:
         answer = False
     return answer
+print(main(911))
