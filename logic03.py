@@ -8,8 +8,8 @@ def main(a,b):
         bool: answer
     """
     if a < 0 and b < 0:
-        answer = "Each of the numbers 'a' and 'b' is negative"
+        answer = True
     else:
-        answer = "Each of the numbers 'a' and 'b' is not negative"
+        answer = False
     return answer
 print(main(-4,-6))
