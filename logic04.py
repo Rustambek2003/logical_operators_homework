@@ -7,14 +7,10 @@ def main(a,b):
     Returns:
         bool: answer
     """
-    answer = ""
-    if a % 2 == 0:
-        answer += "the numbers 'a' is even "
+    answer = 0
+    if a % 2 == 0 and b % 2 == 0:
+        answer = True
     else:
-        answer += "the numbers 'a' is not even "
-    if b % 2 == 0:
-        answer += "the numbers 'b' is even"
-    else:
-         answer += "the numbers 'b' is not even"
+        answer = False
     return answer
-print(main(44,13))
+print(main(44,12))
