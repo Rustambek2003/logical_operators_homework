@@ -8,11 +8,15 @@ def main(x):
     Returns:
         bool: answer
     """
-    answer = 0
-    a = x % 10
-    b = (x // 10) % 10
-    c = x // 100
-    X = a * 100 + b * 10 + c
+    if x > 9 and x < 100:
+        a = x % 10
+        b = (x // 10) % 10
+        X = a * 10 +b
+    if x > 99 and x < 1000:
+        a = x % 10
+        b = (x // 10) % 10
+        c = x // 100
+        X = a * 100 + b * 10 + c
     if X == x:
         answer = True
     else:
